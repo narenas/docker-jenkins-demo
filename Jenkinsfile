@@ -1,14 +1,11 @@
 pipeline{
-    agent{
-        ( any )
+    agent {
+        dockerfile 
     }
     stages{
         stage("build")
             steps{
-                echo "========Building Container========"
-                script {
-                    docker.build ("Nico1")
-                } 
+                echo "========Running Container========"
            }
     }
 }
