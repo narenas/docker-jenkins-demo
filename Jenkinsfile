@@ -1,6 +1,6 @@
 pipeline{
     agent{
-        any
+        ( any )
     }
     stages{
         stage("build")
@@ -9,6 +9,6 @@ pipeline{
                 script {
                     docker.build ("Nico1")
                 } 
-            }
+           }
     }
 }
