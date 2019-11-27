@@ -3,9 +3,10 @@ pipeline{
         dockerfile true
     }
     stages{
-        stage("build")
+        stage("build") {
             steps{
                 echo "========Running Container========"
            }
+        }
     }
 }
