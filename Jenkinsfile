@@ -10,7 +10,7 @@ pipeline{
         }
         stage("Run tests") {
             steps{
-                sh "echo =============Runing tests==========" 
+                sh "echo =============Runing tests in branch test==========" 
             }
         }
     }
