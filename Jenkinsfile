@@ -8,5 +8,10 @@ pipeline{
                 echo "========Running Container========"
            }
         }
+        stage("Run tests") {
+            steps{
+                sh "echo =============Runing tests==========" 
+            }
+        }
     }
 }
